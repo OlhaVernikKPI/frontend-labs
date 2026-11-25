@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #ffffff;
+    color: #222222;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   ОСНОВНИЙ МАКЕТ
+   ================================ */
+
+.layout {
+    width: 80%;
+
+    margin: 0 auto;
+
+    border: 1px solid #cccccc;
+}
+
+
+/* Загальні властивості блоків */
+
+.block {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* Верхній лівий блок */
+
+.image-top {
+    height: 180px;
+
+    background-color: #898cf2;
+}
+
+
+/* Верхній правий блок */
+
+.text-top {
+    height: 180px;
+
+    background-color: #2c9fc1;
+}
+
+
+/* Середній блок */
+
+.middle-text {
+    height: 90px;
+
+    background-color: #a8dff0;
+}
+
+
+/* Нижній блок */
+
+.bottom-image {
+    height: 120px;
+
+    background-color: #2c9fc1;
+}
+
+
+/* ================================
+   ЗАВДАННЯ 1 — FLOAT
+   ================================ */
+
+.float-half {
+    float: left;
+
+    width: 50%;
+}
+
+
+/*Я
+    Після елементів з float
+    очищаємо потік документа.
+*/
+
+.float-top::after {
+    content: "";
+
+    display: block;
+
+    clear: both;
+}
+
+
+/* Повноширинні блоки */
+
+.full-block {
+    width: 100%;
+}
+
+
+/* ================================
+   ЗАВДАННЯ 2 — FLEXBOX
+   ================================ */
+
+.flex-top {
+    display: flex;
+
+    width: 100%;
+}
+
+.flex-half {
+    width: 50%;
+}
+
+
+/* ================================
+   МЕНЮ ЛАБОРАТОРНОЇ
+   ================================ */
+
+.menu-container {
+    text-align: center;
+}
+
+.lab-menu {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.lab-menu a {
+    display: block;
+
+    padding: 18px 30px;
+
+    text-decoration: none;
+
+    background-color: #bf2cc1;
+    color: #ffffff;
+
+    border-radius: 6px;
+}
+
+.lab-menu a:hover {
+    background-color: #840f96;
+}
+
+
+/* ================================
+   ПОСИЛАННЯ НАЗАД
+   ================================ */
+
+.back-link {
+    width: 80%;
+
+    margin: 25px auto;
+}
+
+.back-link a {
+    color: #2c6ea3;
+}
+
+
+/* ================================
+   АДАПТАЦІЯ ДЛЯ МАЛОГО ЕКРАНА
+   ================================ */
+
+@media (max-width: 650px) {
+
+    .layout {
+        width: 95%;
+    }
+
+    .block {
+        font-size: 22px;
+    }
+
+    .lab-menu {
+        flex-direction: column;
+    }
+}
