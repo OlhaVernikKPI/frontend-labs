@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2,
+h3,
+p {
+    padding: 8px;
+}
+
+.interactive-element {
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* =================================
+   ЗАВДАННЯ 1
+   ================================= */
+
+.changed-third {
+    background-color: #1f5fa8;
+    color: #ffffff;
+}
+
+.changed-fourth {
+    background-color: #18844b;
+    color: #ffffff;
+}
+
+
+/* =================================
+   ЗОБРАЖЕННЯ
+   ================================= */
+
+.city-image,
+.added-image {
+    display: block;
+
+    width: 700px;
+    max-width: 100%;
+
+    height: auto;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.added-image {
+    border: 3px solid #555555;
+}
+
+
+/* =================================
+   КНОПКИ
+   ================================= */
+
+.image-controls {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-top: 15px;
+}
+
+.image-controls button {
+    padding: 9px 16px;
+
+    border: 1px solid #777777;
+
+    background-color: #eeeeee;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.image-controls button:hover {
+    background-color: #dddddd;
+}
+
+.status {
+    min-height: 25px;
+
+    margin-top: 10px;
+
+    color: #444444;
+}

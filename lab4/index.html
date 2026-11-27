@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="keywords"
+        content="JavaScript, DOM, getElementById, querySelector, frontend, Вернік Ольга"
+    >
+
+    <meta
+        name="description"
+        content="Лабораторна робота №4 з дисципліни Основи FE-технологій"
+    >
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Вернік О.О. | ІС-42 | ЛР №4 | Варіант 2</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- 1-й змістовий елемент -->
+        <h2>Вернік Ольга Олексіївна</h2>
+
+        <!-- 2-й змістовий елемент -->
+        <p>
+            Дата і місце народження: 04.12.2006, м. Київ, Україна.
+        </p>
+
+        <!-- 3-й змістовий елемент -->
+        <p id="element3" class="interactive-element">
+            Освіта: навчалася у ліцеї №145 міста Києва.
+            Зараз навчаюся у Національному технічному університеті України
+            «Київський політехнічний інститут імені Ігоря Сікорського».
+        </p>
+
+        <!-- 4-й змістовий елемент -->
+        <h3 class="element4 interactive-element">
+            Мої хобі
+        </h3>
+
+        <ul>
+            <li>Волейбол</li>
+            <li>Капоейра</li>
+            <li>Туризм</li>
+            <li>Фотографія</li>
+        </ul>
+
+        <h3>Мої улюблені книги</h3>
+
+        <ol>
+            <li>
+                «Путівник по Галактиці для космотуристів» - Дуглас Адамс
+            </li>
+
+            <li>
+                «Ресторан “Кінець світу”» - Дуглас Адамс
+            </li>
+
+            <li>
+                «Життя, Всесвіт і все інше» - Дуглас Адамс
+            </li>
+        </ol>
+
+        <h3>Моє улюблене місто</h3>
+
+        <p>
+            Одним із моїх улюблених міст є Нікосія - столиця Кіпру.
+            Я не лише відвідувала це місто, а й певний час жила там.
+            Нікосія запам’яталася мені своєю атмосферою,
+            поєднанням історичної архітектури та сучасного міського життя.
+        </p>
+
+        <a
+            href="https://www.nicosia.org.cy/en-GB/home/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                id="originalImage"
+                class="city-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/86/Nicosia%27s_Skyline.jpg"
+                alt="Панорама міста Нікосія, Кіпр"
+                width="500"
+            >
+        </a>
+
+
+        <div id="dynamicImageContainer"></div>
+
+        <div class="image-controls">
+
+            <button id="addImage" type="button">
+                Додати
+            </button>
+
+            <button id="increaseImage" type="button">
+                Збільшити
+            </button>
+
+            <button id="decreaseImage" type="button">
+                Зменшити
+            </button>
+
+            <button id="deleteImage" type="button">
+                Видалити
+            </button>
+
+        </div>
+
+        <p id="imageStatus" class="status"></p>
+
+    </main>
+
+</body>
+
+</html>
