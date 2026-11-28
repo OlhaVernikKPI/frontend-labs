@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Вернік О.О. | ІС-42 | ЛР №5 | Варіант 2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<main class="container">
+
+    <h1>Лабораторна робота №5</h1>
+
+    <h2>Завдання 1. Перевірка даних</h2>
+
+    <form id="dataForm" novalidate>
+
+        <div class="form-row">
+            <label for="fullName">ПІБ</label>
+            <input
+                id="fullName"
+                type="text"
+                value="Вернік О.О."
+                placeholder="Вернік О.О."
+            >
+            <span class="error"></span>
+        </div>
+
+        <div class="form-row">
+            <label for="group">Група</label>
+            <input
+                id="group"
+                type="text"
+                value="ІС-42"
+                placeholder="ІС-42"
+            >
+            <span class="error"></span>
+        </div>
+
+        <div class="form-row">
+            <label for="phone">Телефон</label>
+            <input
+                id="phone"
+                type="text"
+                value="(050)-123-45-67"
+                placeholder="(050)-123-45-67"
+            >
+            <span class="error"></span>
+        </div>
+
+        <div class="form-row">
+            <label for="idCard">ID-card</label>
+            <input
+                id="idCard"
+                type="text"
+                value="АА №123456"
+                placeholder="АА №123456"
+            >
+            <span class="error"></span>
+        </div>
+
+        <div class="form-row">
+            <label for="faculty">Факультет</label>
+            <input
+                id="faculty"
+                type="text"
+                value="ФІОТ"
+                placeholder="ФІОТ"
+            >
+            <span class="error"></span>
+        </div>
+
+        <button type="submit">Перевірити</button>
+
+    </form>
+
+
+    <h2>Завдання 2. Таблиця 6×6</h2>
+
+    <div class="color-control">
+        <label for="colorPicker">Оберіть колір:</label>
+        <input
+            type="color"
+            id="colorPicker"
+            value="#00aaff"
+        >
+    </div>
+
+    <table id="numberTable"></table>
+
+    <p class="hint">
+        Комірка №2: наведення - випадковий колір,
+        клік - вибраний колір,
+        подвійний клік - зафарбування стовпця.
+    </p>
+
+</main>
+
+</body>
+</html>

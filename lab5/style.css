@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background: #ffffff;
+    color: #222222;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    margin-bottom: 25px;
+}
+
+
+/* FORM */
+
+#dataForm {
+    max-width: 550px;
+    margin-bottom: 60px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    padding: 10px;
+
+    border: 2px solid transparent;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+.form-row input {
+    width: 100%;
+
+    padding: 9px;
+
+    font-size: 16px;
+}
+
+.form-row.invalid {
+    border-color: #d90000;
+    background-color: #ffe5e5;
+}
+
+.error {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #c00000;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+
+    cursor: pointer;
+}
+
+
+/* TABLE */
+
+.color-control {
+    margin-bottom: 20px;
+}
+
+#colorPicker {
+    width: 80px;
+    height: 35px;
+
+    vertical-align: middle;
+}
+
+#numberTable {
+    border-collapse: collapse;
+}
+
+#numberTable td {
+    width: 60px;
+    height: 60px;
+
+    border: 1px solid #333333;
+
+    text-align: center;
+    vertical-align: middle;
+
+    font-weight: bold;
+
+    cursor: default;
+}
+
+#numberTable td.target-cell {
+    cursor: pointer;
+
+    border: 3px solid #222222;
+}
+
+.hint {
+    margin-top: 20px;
+}
